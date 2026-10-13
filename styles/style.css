@@ -1,0 +1,252 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #4059AD;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4059AD;
+    color: #EFF2F1;
+}
+#hero-msg h4 {
+    color: white;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #97D8C4;
+}
+
+body {
+    background-color: #EFF2F1;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    /* Using rgba gives it a translucent effect like the example */
+    background-color: rgba(107, 154, 196, 0.85); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centers the links vertically */
+}
+
+nav a {
+    text-align: center;
+    color: #EFF2F1; /* Changes dark blue text to light off-white */
+    text-decoration: none;
+    padding: 35px; /* Gives the links comfortable spacing */
+}
+
+.book, .join {
+    background-color: #F4B942;
+    color: #4059AD;
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    background-color: #4059AD;
+    color: #EFF2F1;
+}
+
+.msg h2 {
+    color: #6B9AC4;
+}
+
+.msg p {
+    color: #EFF2F1;
+}
+
+.home-title {
+    color: #6B9AC4;
+}
+
+h4 {
+    color: #6B9AC4;
+}
+
+footer {
+    background-color: #6B9AC4;
+    color: #EFF2F1;
+}
+
+footer a {
+    color: #EFF2F1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F4B942;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+#hero-img {
+    width: 100%;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.rivers-card {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.camping-card {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+
+.rapids-card {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+}
+
+#background {
+    grid-column: 1 / 11;
+    grid-row: 4 / 9;
+}
+
+.mountains {
+    grid-column: 2 / 7;
+    grid-row: 5 / 8;
+}
+
+.msg {
+    background-color: #6f7364;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
