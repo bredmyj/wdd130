@@ -1,0 +1,54 @@
+body {
+  background-color: #FFECD7; /* Page background[cite: 1] */
+  display: flex;
+  justify-content: center;   /* Centers horizontally */
+  align-items: center;       /* Centers vertically */
+  min-height: 100vh;         /* Takes full screen height */
+  margin: 0;
+}
+.card {
+  background-color: #008DB1; /* Card color[cite: 1] */
+  border: 5px solid #004E63;  /* Outer border color[cite: 1] */
+  border-radius: 20px;       /* Curved corners */
+  width: 350px;              /* Keeps card a manageable width */
+  padding: 20px;             /* Internal spacing around contents */
+  text-align: center;        /* Centers inline text */
+}
+/* 1. Title */
+.card h1 {
+  color: #FFFFFE; /*[cite: 1] */
+  font-family: Helvetica, sans-serif; /*[cite: 1] */
+  margin-top: 0;
+}
+
+/* 2. Subtitle Link */
+.card a {
+  color: #91E4FB; /*[cite: 1] */
+  font-family: Helvetica, sans-serif; /*[cite: 1] */
+  text-decoration: none; /* Removes underline */
+}
+
+/* 3. Image Frame & Size */
+.card img {
+  width: 260px; /* Constrains large picture */
+  border: 4px solid #FFFFFF; /* White frame around picture[cite: 1] */
+  margin-top: 15px;
+}
+
+/* 4. Dates List */
+.card ul {
+  color: #FFFFFE; /*[cite: 1] */
+  font-family: Helvetica, sans-serif; /*[cite: 1] */
+  list-style-position: inside; /* Keeps bullet points centered with text */
+  padding: 0;
+  text-align: left; /* Keeps list text aligned */
+  display: inline-block; /* Helps list stay centered as a block */
+}
+
+/* 5. Bottom Quote */
+.card blockquote {
+  color: #FFD783; /*[cite: 1] */
+  font-family: "Brush Script MT", "Nanum Brush Script", cursive; /*[cite: 1] */
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
