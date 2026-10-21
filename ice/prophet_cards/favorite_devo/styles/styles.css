@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+/* Table wrapper keeps wide tables from breaking small screens */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.devo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.devo-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.devo-table th {
+  background: #1f4e79;
+  color: #fff;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.devo-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Zebra striping and a hover highlight */
+.devo-table tbody tr:nth-child(even) {
+  background: #f2f6fa;
+}
+
+.devo-table tbody tr:hover {
+  background: #dbe8f5;
+  transition: background 0.2s ease;
+}
+
+/* Form */
+.devo-form {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f7f9fc;
+  border: 1px solid #d0dbe6;
+  border-radius: 8px;
+}
+
+.devo-form h3 {
+  margin-top: 0;
+  color: #1f4e79;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.form-row input {
+  padding: 0.5rem;
+  border: 1px solid #aab8c8;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-row input:focus {
+  outline: 2px solid #1f4e79;
+  border-color: transparent;
+}
+
+.devo-form button {
+  background: #1f4e79;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.devo-form button:hover {
+  background: #163a5a;
+}
