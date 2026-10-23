@@ -1,0 +1,137 @@
+/* 1. Fonts: paste the Google Fonts link you chose */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+
+
+/* 2. Variables: names must match the var() calls below */
+:root {
+    --color-primary: #33283d;  /* dusky plum: header and footer */
+    --color-teal: #5c6b3c;     /* olive moss: nav bar */
+    --color-accent: #a85a2e;   /* burnt sienna: hover state */
+    --color-light: #f5efe3;    /* faded parchment: page background */
+    --color-gray: #d6d0c4;     /* weathered stone: borders */
+    --color-text: #1c1820;     /* near-black: body text */
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Roboto", Arial, sans-serif;
+}
+
+/* 3. Whole page: matches <body> */
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-light);
+    line-height: 1.6;
+}
+/* 4. Layout: matches <div id="wrapper"> */
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* 5. Headings: match every <h1> and <h2> */
+h1,
+h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+/* 6. Image: matches the <img> */
+img {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 7. Top bar: matches <header> */
+header {
+    grid-area: header;
+    background: var(--color-primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+/* 8. Nav list: matches the <ul> inside <nav> inside <header> */
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* 9. Nav items: matches each <li> */
+header li {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+/* 10. Hover state: matches an <li> when the mouse is over it */
+header li:hover {
+    background: var(--color-accent);
+}
+
+/* 11. Main content: matches <main> */
+main {
+    grid-area: main;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    align-content: flex-start;
+}
+
+/* 12. Main heading: matches the <h1> inside <main> */
+main img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+main h1,
+img {
+    flex: 0 0 100%;
+    text-align: center;
+}
+main h1 {
+    flex: 0 0 100%;
+    text-align: center;
+}
+/* 13. Sections: match each <section> (Pumpkins, Bats, Skeletons) */
+section {
+    flex: 0 1 260px;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+/* 14. Section headings: match each <h2> inside a <section> */
+section h2 {
+    margin-top: 0;
+}
+
+/* 15. Section text: matches each <p> inside a <section> */
+section p {
+    margin: 0 0 0.75rem;
+}
+/* 16. Footer: matches <footer> */
+footer {
+    grid-area: footer;
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
